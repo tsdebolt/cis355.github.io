@@ -22,11 +22,19 @@ function main () {
 	
     array_multisort($arr2, SORT_DESC, $arr1);
 	
+	echo "<table style='border: 1px solid black; border-collapse:collapse padding:10px;;'>
+            <tr>
+                <th style='border:1px solid black; padding: 10px;'>Country</th>
+                <th style='border:1px solid black; padding: 10px;'>Deaths</th>
+            </tr>";
+                
 	for ($x = 1; $x < 11; $x++){
-		echo $x . ". " . $arr1[$x] . " : " . $arr2[$x] . "<br/>";
+	echo "<tr>
+		    <td style='border:1px solid black; padding: 10px;'>" . $arr1[$x] . "</td>
+		    <td style='border:1px solid black; padding: 10px;'>" . $arr2[$x] . "</td>
+		  </tr>";
 	}
-	
-	// close html body section
+	echo "</table>";
 	echo '</body>';
 	echo '</html>';
 }
@@ -45,15 +53,3 @@ function curl_get_contents($url) {
     return $data;
 }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
