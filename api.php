@@ -82,6 +82,7 @@ function curl_get_contents($url) {
     curl_close($ch);
     return $data;
 }
+
 ?>
 
 
